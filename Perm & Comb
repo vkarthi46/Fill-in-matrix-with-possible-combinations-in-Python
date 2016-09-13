@@ -1,0 +1,181 @@
+## Permutation - '0'-degree rotation
+import pandas as pd
+import numpy as np
+import itertools
+import string
+from itertools import permutations
+
+# the size of the square matrix
+n = 2
+b=97+n*n
+items=['A','B','C','D']
+count = 0
+for p in permutations(items):
+    l = list(p)
+    
+# print out the array as a matrix
+    count = count+1
+    print 'Matrix #',count
+    for i in range(n):
+        for j in range(n):
+            print "%2s"%l[i * n + j],
+        print
+    print
+    
+    
+## Combinations - '0'-degree rotation
+
+import itertools
+
+# the size of the square matrix
+n = 2
+
+perms = list(itertools.combinations_with_replacement(['A','B','C','D'],4))
+
+count = 24
+for p in perms:
+    l = list(p)
+    
+    # print out the array as a matrix
+    count = count+1
+    print 'Matrix #',count
+    for i in range(n):
+        for j in range(n):
+            print "%2s"%l[i * n + j],
+        print
+        
+        
+## Permutation - '90'-degree rotation
+import pandas as pd
+import numpy as np
+import itertools
+import string
+from itertools import permutations
+
+# the size of the square matrix
+n = 2
+b=97+n*n
+items=['C','A','D','B']
+count = 59
+for p in permutations(items):
+    l = list(p)
+    
+# print out the array as a matrix
+    count = count+1
+    print 'Matrix #',count
+    for i in range(n):
+        for j in range(n):
+            print "%2s"%l[i * n + j],
+        print
+    print      
+    
+## Combinations - '90'-degree rotation
+
+import itertools
+
+# the size of the square matrix
+n = 2
+
+perms = list(itertools.combinations_with_replacement(['C','A','D','B'],4))
+
+count = 83
+for p in perms:
+    l = list(p)
+    
+    # print out the array as a matrix
+    count = count+1
+    print 'Matrix #',count
+    for i in range(n):
+        for j in range(n):
+            print "%2s"%l[i * n + j],
+        print
+        
+## Permutation - '180'-degree rotation
+import pandas as pd
+import numpy as np
+import itertools
+import string
+from itertools import permutations
+
+# the size of the square matrix
+n = 2
+b=97+n*n
+items=['D','C','B','A']
+count = 118
+for p in permutations(items):
+    l = list(p)
+    
+# print out the array as a matrix
+    count = count+1
+    print 'Matrix #',count
+    for i in range(n):
+        for j in range(n):
+            print "%2s"%l[i * n + j],
+        print
+    print
+    
+## Combinations - '180'-degree rotation
+
+import itertools
+
+# the size of the square matrix
+n = 2
+
+perms = list(itertools.combinations_with_replacement(['D','C','B','A'],4))
+
+count = 142
+for p in perms:
+    l = list(p)
+    
+    # print out the array as a matrix
+    count = count+1
+    print 'Matrix #',count
+    for i in range(n):
+        for j in range(n):
+            print "%2s"%l[i * n + j],
+        print
+        
+## Permutation - '270'-degree rotation
+import pandas as pd
+import numpy as np
+import itertools
+import string
+from itertools import permutations
+
+# the size of the square matrix
+n = 2
+b=97+n*n
+items=['B','D','A','C']
+count = 177
+for p in permutations(items):
+    l = list(p)
+    
+# print out the array as a matrix
+    count = count+1
+    print 'Matrix #',count
+    for i in range(n):
+        for j in range(n):
+            print "%2s"%l[i * n + j],
+        print
+    print      
+  
+## Combinations - '270'-degree rotation
+
+import itertools
+
+# the size of the square matrix
+n = 2
+
+perms = list(itertools.combinations_with_replacement(['B','D','A','C'],4))
+
+count = 201
+for p in perms:
+    l = list(p)
+    
+    # print out the array as a matrix
+    count = count+1
+    print 'Matrix #',count
+    for i in range(n):
+        for j in range(n):
+            print "%2s"%l[i * n + j],
+        print  
