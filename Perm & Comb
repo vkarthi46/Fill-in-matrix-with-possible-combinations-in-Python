@@ -179,3 +179,26 @@ for p in perms:
         for j in range(n):
             print "%2s"%l[i * n + j],
         print  
+
+import pandas as pd
+import numpy as np
+import itertools
+import string
+from itertools import permutations
+from itertools import product
+
+# the size of the square matrix
+n = 2
+mat=['A','B','C','D']
+count = 0
+for p in product(mat,repeat = 4):
+    l = list(p)
+    
+# print out the array as a matrix
+    count = count+1
+    print 'Matrix #',count
+    for i in range(n):
+        for j in range(n):
+            print "%2s"%l[i * n + j],
+        print
+    print
